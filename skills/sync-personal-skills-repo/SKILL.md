@@ -48,11 +48,12 @@ If the user merely asks how a skill works, do not sync anything.
 3. Validate the skill with `quick_validate.py` in UTF-8 mode.
 4. Clone or update the personal skills repository in a temporary or user-approved workspace.
 5. Copy the local skill folder to `skills/<skill-name>/` in the repository.
-6. Exclude caches and generated noise: `__pycache__/`, `.pyc`, `.DS_Store`, temporary files, local logs, secrets, tokens, and private project data.
-7. Inspect `git diff --stat` and the relevant diff summary.
-8. Ask the user for explicit confirmation before commit/push unless the user already gave direct approval in the same turn.
-9. Commit with a focused message such as `docs: sync <skill-name> skill`.
-10. Push to `origin main`.
+6. Update the repository `README.md` every time a skill is added or updated. Include the skill name and a short Chinese description of what it is used for.
+7. Exclude caches and generated noise: `__pycache__/`, `.pyc`, `.DS_Store`, temporary files, local logs, secrets, tokens, and private project data.
+8. Inspect `git diff --stat` and the relevant diff summary.
+9. Ask the user for explicit confirmation before commit/push unless the user already gave direct approval in the same turn.
+10. Commit with a focused message such as `docs: sync <skill-name> skill`.
+11. Push to `origin main`.
 
 ## Confirmation Rule
 
@@ -72,7 +73,8 @@ Before publishing, verify:
 - No unrelated project-specific commit/push/release policy is included unless the skill is explicitly about that project.
 - Absolute local paths are avoided unless they describe this user's personal Codex skill directory or are necessary for this personal workflow.
 - `agents/openai.yaml`, if present, matches the skill purpose.
-- The target repo diff only touches the intended `skills/<skill-name>/` folder and intentional repo-level docs.
+- The target repo diff only touches the intended `skills/<skill-name>/` folder and intentional repo-level docs such as `README.md`.
+- `README.md` includes or updates a short entry explaining what the synced skill is used for.
 
 ## Handling Existing Skills
 
@@ -89,4 +91,5 @@ When the target skill already exists in the repository:
 - Pushing without confirmation after a skill edit.
 - Publishing caches or temporary files.
 - Forgetting to validate the skill before copying it into the repository.
+- Forgetting to update `README.md` after adding or changing a skill.
 - Mixing multiple unrelated skills in one commit unless the user asked to sync them together.
