@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sync Personal Skills Repo"
+  short_description: "半自动同步个人 Codex Skills 仓库"
+  default_prompt: "Use $sync-personal-skills-repo to sync a local Codex skill into my personal GitHub skills repository after confirmation."

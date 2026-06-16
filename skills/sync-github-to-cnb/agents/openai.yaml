@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sync GitHub to CNB"
+  short_description: "打通 GitHub 与 CNB 镜像发布链路"
+  default_prompt: "Use $sync-github-to-cnb to connect a GitHub repository with a CNB mirror and release sync."
