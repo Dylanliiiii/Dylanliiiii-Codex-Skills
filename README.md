@@ -1,6 +1,6 @@
 # Dylanliiiii Codex Skills
 
-这个仓库用于整理、保存和记录我自己创建或维护过的 Codex Skills。
+这个仓库用于整理、保存和记录我自己创建和收藏过的 Codex Skills。
 
 ## Skills
 
